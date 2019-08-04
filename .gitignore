@@ -1,0 +1,7 @@
+.vscode/
+node_modules/*
+yarn-error.log
+lib/
+.npmrc
+coverage/
+vcap_services.json
