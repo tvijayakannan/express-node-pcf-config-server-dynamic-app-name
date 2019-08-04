@@ -1,0 +1,8 @@
+---
+applications:
+  - name: branding-server-stage
+    memory: 216M
+    command: "NODE_ENV=stage node index.js"
+    services:
+      - branding-configs
+    buildpack: https://github.com/cloudfoundry/nodejs-buildpack

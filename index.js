@@ -3,9 +3,9 @@ const configClient = require("cloud-foundry-config-client");
 require("custom-env").env(true);
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 app.get("/", (req, res) => res.send("Server Started successfully "));
-
+console.log("vcap-service-vijay" + process.env.VCAP_SERVICES);
 app.get("/branding/:appName/:environment", (req, res) => {
   const params = {
     appName: req.params.appName,

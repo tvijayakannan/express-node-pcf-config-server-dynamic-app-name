@@ -1,0 +1,8 @@
+---
+applications:
+  - name: branding-server
+    memory: 216M
+    command: "NODE_ENV=production node index.js"
+    services:
+      - branding-configs
+    buildpack: https://github.com/cloudfoundry/nodejs-buildpack
