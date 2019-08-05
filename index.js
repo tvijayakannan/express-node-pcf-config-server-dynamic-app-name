@@ -47,7 +47,7 @@ app.get("/branding/message/:appName/:client/:lang", (req, res) => {
   const params = {
     appName: req.params.appName,
     configLocation: process.env.CONFIG_SERVER_LOCATION,
-    profile: getProfilesName(
+    profile: getMessageProfilesName(
       "message",
       req.params.appName,
       req.params.client,
